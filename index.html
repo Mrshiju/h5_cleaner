@@ -2915,8 +2915,8 @@
                 <script>
                     setInterval(function() {
                         $(".custormer_comments ul li").animate({
-                            opacity: ".6",
-                            top: $(this).height()
+                            "opacity": ".6",
+                            "top": -$('.custormer_comments ul li:first').height(),
                         }, 300, function() {
                             $(this).animate({
                                 opacity: "1"
